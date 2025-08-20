@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giulia Morangos</title>
+  <meta name="description" content="Site modelo em HTML/CSS para receitas de Morango do Amor e suas variações.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container topbar">
+      <a class="brand" href="#top" aria-label="Morango do Amor - Início">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Morangos da Giulia</span>
+      </a>
+      <nav class="nav">
+        <a href="#receitas">Receitas</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="container hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <div>
+        <h1 id="hero-title">Receitas de Morango do Amor e suas variedades</h1>
+        <p>
+          Do clássico da festa junina às versões gourmet, fit e veganas. 
+          Aprenda o ponto perfeito, coberturas incríveis e finalizações que encantam.
+        </p>
+        <div class="badges">
+          <span class="badge">Sem complicação</span>
+          <span class="badge">Ponto perfeito</span>
+          <span class="badge">Gourmet &amp; Fit</span>
+        </div>
+        <p class="hero-cta">
+          <a class="btn" href="#receitas">Ver receitas</a>
+        </p>
+      </div>
+      <div class="hero-figure" aria-hidden="true">
+        <div class="strawberry"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Receitas + Filtros -->
+  <main id="receitas" class="container recipes-wrap">
+    <h2>Receitas</h2>
+
+    <!-- Grid de Cards -->
+    <section class="grid recipes" aria-live="polite">
+      <!-- Card 1 -->
+      <article class="card classico" aria-labelledby="r1-title">
+        <a class="card-link" href="#r1" aria-label="Abrir receita Morango do Amor Clássico">
+          <div class="thumb thumb--classico" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3 id="r1-title">Morango do Amor Clássico</h3>
+            <ul class="meta">
+              <li>⏱ 20 min</li>
+              <li>🍓 12 unidades</li>
+              <li>💡 Fácil</li>
+            </ul>
+            <p class="desc">Cobertura crocante de caramelo, brilho intenso e ponto de estalo.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card belga gourmet" aria-labelledby="r2-title">
+        <a class="card-link" href="#r2">
+          <div class="thumb thumb--belga"></div>
+          <div class="card-body">
+            <h3 id="r2-title">Morango Belga (Crunchy)</h3>
+            <ul class="meta">
+              <li>⏱ 25 min</li>
+              <li>🍓 10 unidades</li>
+              <li>⭐ Intermediário</li>
+            </ul>
+            <p class="desc">Cobertura de chocolate belga com granela crocante.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card branco gourmet" aria-labelledby="r3-title">
+        <a class="card-link" href="#r3">
+          <div class="thumb thumb--branco"></div>
+          <div class="card-body">
+            <h3 id="r3-title">Branco com Pistache</h3>
+            <ul class="meta">
+              <li>⏱ 25 min</li>
+              <li>🍓 10 unidades</li>
+              <li>⭐ Intermediário</li>
+            </ul>
+            <p class="desc">Chocolate branco temperado e pistache torrado.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card fit" aria-labelledby="r4-title">
+        <a class="card-link" href="#r4">
+          <div class="thumb thumb--fit"></div>
+          <div class="card-body">
+            <h3 id="r4-title">Fit 70% Cacau</h3>
+            <ul class="meta">
+              <li>⏱ 15 min</li>
+              <li>🍓 12 unidades</li>
+              <li>💚 Sem açúcar</li>
+            </ul>
+            <p class="desc">Banho em chocolate 70% e cacau em pó.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card vegano" aria-labelledby="r5-title">
+        <a class="card-link" href="#r5">
+          <div class="thumb thumb--vegano"></div>
+          <div class="card-body">
+            <h3 id="r5-title">Vegano com Coco</h3>
+            <ul class="meta">
+              <li>⏱ 18 min</li>
+              <li>🍓 12 unidades</li>
+              <li>🌱 Vegano</li>
+            </ul>
+            <p class="desc">Cobertura vegana e flocos de coco.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card gourmet" aria-labelledby="r6-title">
+        <a class="card-link" href="#r6">
+          <div class="thumb thumb--caramelo"></div>
+          <div class="card-body">
+            <h3 id="r6-title">Caramelo Salgado</h3>
+            <ul class="meta">
+              <li>⏱ 30 min</li>
+              <li>🍓 10 unidades</li>
+              <li>🍯 Gourmet</li>
+            </ul>
+            <p class="desc">Caramelo amanteigado com flor de sal.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 7 -->
+      <article class="card kids" aria-labelledby="r7-title">
+        <a class="card-link" href="#r7">
+          <div class="thumb thumb--kids"></div>
+          <div class="card-body">
+            <h3 id="r7-title">Mini Kids com Confeitos</h3>
+            <ul class="meta">
+              <li>⏱ 15 min</li>
+              <li>🍓 20 minis</li>
+              <li>🎉 Festa</li>
+            </ul>
+            <p class="desc">Banho de chocolate e chuva de confeitos coloridos.</p>
+          </div>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Sobre -->
+  <section id="sobre" class="container about">
+    <h2>Sobre</h2>
+    <p>
+     A Giulia Morango nasceu com o propósito de transformar um doce simples em experiências marcantes. 
+    Especializada em morangos no palito, conhecidos como “Morango do Amor”, a empresa une tradição, inovação e qualidade em cada receita.
+    </p>
+    <p>
+        Missão:
+        Encantar pessoas através do sabor e da beleza dos morangos, levando alegria e doçura a cada ocasião.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year">2025</span> Giulia Morangos</p>
+    </div>
+  </footer>
+
+  <!-- MODAIS (CSS-only com :target) -->
+  <!-- r1 -->
+  <section id="r1" class="modal" aria-labelledby="r1-title-modal">
+    <a class="modal-overlay" href="#top" aria-label="Fechar"></a>
+    <div class="modal-box">
+      <a class="modal-close" href="#top" aria-label="Fechar">×</a>
+      <header class="modal-header">
+        <h3 id="r1-title-modal">Morango do Amor Clássico</h3>
+        <p class="muted">Crosta de caramelo com ponto de estalo</p>
+      </header>
+      <div class="modal-content">
+        <aside class="modal-side">
+          <div class="thumb thumb--classico"></div>
+          <ul class="meta meta--block">
+            <li>Tempo: 20 min</li>
+            <li>Rendimento: 12 unidades</li>
+            <li>Dificuldade: Fácil</li>
+          </ul>
+        </aside>
+        <article class="modal-main">
+          <h4>Ingredientes</h4>
+          <ul>
+            <li>12 morangos grandes, secos</li>
+            <li>2 xícaras (400 g) de açúcar</li>
+            <li>1/2 xícara (120 ml) de água</li>
+            <li>1/3 xícara (80 ml) de glucose de milho (ou 1 col. sopa de vinagre)</li>
+            <li>Palitos de churrasco</li>
+          </ul>
+          <h4>Modo de preparo</h4>
+          <ol>
+            <li>Espete os morangos e seque muito bem (umidade racha o caramelo).</li>
+            <li>Leve ao fogo açúcar, água e glucose sem mexer. Fogo médio até <strong>150 °C (ponto de vidro)</strong>.</li>
+            <li>Retire do fogo, aguarde as bolhas baixarem e banhe os morangos girando.</li>
+            <li>Deixe escorrer sobre tapete de silicone ou papel manteiga untado.</li>
+          </ol>
+          <h4>Dicas</h4>
+          <ul>
+            <li>Use panela alta para evitar respingos.</li>
+            <li>Sem termômetro: teste em água gelada — a gota endurece e quebra.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- r2 -->
+  <section id="r2" class="modal" aria-labelledby="r2-title-modal">
+    <a class="modal-overlay" href="#top"></a>
+    <div class="modal-box">
+      <a class="modal-close" href="#top">×</a>
+      <header class="modal-header">
+        <h3 id="r2-title-modal">Morango Belga (Crunchy)</h3>
+        <p class="muted">Chocolate belga + granela crocante</p>
+      </header>
+      <div class="modal-content">
+        <aside class="modal-side">
+          <div class="thumb thumb--belga"></div>
+          <ul class="meta meta--block">
+            <li>Tempo: 25 min</li>
+            <li>Rendimento: 10 unidades</li>
+            <li>Nível: Intermediário</li>
+          </ul>
+        </aside>
+        <article class="modal-main">
+          <h4>Ingredientes</h4>
+          <ul>
+            <li>10 morangos grandes, secos</li>
+            <li>300 g de chocolate belga ao leite</li>
+            <li>80 g de granela crocante (amêndoa, castanha ou nibs)</li>
+          </ul>
+          <h4>Preparo</h4>
+          <ol>
+            <li>Tempere o chocolate conforme o fabricante.</li>
+            <li>Banhe os morangos, escorra e polvilhe a granela.</li>
+            <li>Leve à geladeira por 10–12 min (porta fechada, sem umidade).</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- r3 -->
+  <section id="r3" class="modal" aria-labelledby="r3-title-modal">
+    <a class="modal-overlay" href="#top"></a>
+    <div class="modal-box">
+      <a class="modal-close" href="#top">×</a>
+      <header class="modal-header">
+        <h3 id="r3-title-modal">Branco com Pistache</h3>
+        <p class="muted">Chocolate branco + pistache torrado</p>
+      </header>
+      <div class="modal-content">
+        <aside class="modal-side">
+          <div class="thumb thumb--branco"></div>
+          <ul class="meta meta--block">
+            <li>Tempo: 25 min</li>
+            <li>Rendimento: 10 unidades</li>
+          </ul>
+        </aside>
+        <article class="modal-main">
+          <h4>Ingredientes</h4>
+          <ul>
+            <li>10 morangos, secos</li>
+            <li>300 g chocolate branco nobre</li>
+            <li>60 g pistache picado e torrado</li>
+          </ul>
+          <h4>Preparo</h4>
+          <ol>
+            <li>Tempere o chocolate branco (atenção ao ponto).</li>
+            <li>Banhe, escorra e finalize com pistache.</li>
+            <li>Deixe cristalizar em local fresco.</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- r4 -->
+  <section id="r4" class="modal" aria-labelledby="r4-title-modal">
+    <a class="modal-overlay" href="#top"></a>
+    <div class="modal-box">
+      <a class="modal-close" href="#top">×</a>
+      <header class="modal-header">
+        <h3 id="r4-title-modal">Fit 70% Cacau</h3>
+        <p class="muted">Sem açúcar, cobertura intensa</p>
+      </header>
+      <div class="modal-content">
+        <aside class="modal-side">
+          <div class="thumb thumb--fit"></div>
+          <ul class="meta meta--block">
+            <li>Tempo: 15 min</li>
+            <li>Rendimento: 12 unidades</li>
+          </ul>
+        </aside>
+        <article class="modal-main">
+          <h4>Ingredientes</h4>
+          <ul>
+            <li>12 morangos</li>
+            <li>250 g chocolate 70% cacau</li>
+            <li>Cacau em pó para finalizar (opcional)</li>
+          </ul>
+          <h4>Preparo</h4>
+          <ol>
+            <li>Derreta e tempere o chocolate 70%.</li>
+            <li>Banhe os morangos e polvilhe cacau.</li>
+            <li>Cristalize por 10 min.</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- r5 -->
+  <section id="r5" class="modal" aria-labelledby="r5-title-modal">
+    <a class="modal-overlay" href="#top"></a>
+    <div class="modal-box">
+      <a class="modal-close" href="#top">×</a>
+      <header class="modal-header">
+        <h3 id="r5-title-modal">Vegano com Coco</h3>
+        <p class="muted">Cobertura vegana + flocos de coco</p>
+      </header>
+      <div class="modal-content">
+        <aside class="modal-side">
+          <div class="thumb thumb--vegano"></div>
+          <ul class="meta meta--block">
+            <li>Tempo: 18 min</li>
+            <li>Rendimento: 12 unidades</li>
+          </ul>
+        </aside>
+        <article class="modal-main">
+          <h4>Ingredientes</h4>
+          <ul>
+            <li>12 morangos</li>
+            <li>250 g chocolate vegano (sem leite)</li>
+            <li>Flocos de coco sem açúcar</li>
+          </ul>
+          <h4>Preparo</h4>
+          <ol>
+            <li>Derreta o chocolate vegano em banho-maria suave.</li>
+            <li>Banhe e finalize com flocos de coco.</li>
+            <li>Deixe firmar.</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- r6 -->
+  <section id="r6" class="modal" aria-labelledby="r6-title-modal">
+    <a class="modal-overlay" href="#top"></a>
+    <div class="modal-box">
+      <a class="modal-close" href="#top">×</a>
+      <header class="modal-header">
+        <h3 id="r6-title-modal">Caramelo Salgado</h3>
+        <p class="muted">Toque de flor de sal</p>
+      </header>
+      <div class="modal-content">
+        <aside class="modal-side">
+          <div class="thumb thumb--caramelo"></div>
+          <ul class="meta meta--block">
+            <li>Tempo: 30 min</li>
+            <li>Rendimento: 10 unidades</li>
+          </ul>
+        </aside>
+        <article class="modal-main">
+          <h4>Ingredientes</h4>
+          <ul>
+            <li>10 morangos</li>
+            <li>200 g açúcar + 50 g manteiga + 120 ml creme de leite</li>
+            <li>1 pitada de flor de sal</li>
+          </ul>
+          <h4>Preparo</h4>
+          <ol>
+            <li>Faça caramelo seco, junte manteiga e creme aquecidos (cuidado!).</li>
+            <li>Banhe os morangos e finalize com flor de sal.</li>
+            <li>Deixe firmar.</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- r7 -->
+  <section id="r7" class="modal" aria-labelledby="r7-title-modal">
+    <a class="modal-overlay" href="#top"></a>
+    <div class="modal-box">
+      <a class="modal-close" href="#top">×</a>
+      <header class="modal-header">
+        <h3 id="r7-title-modal">Mini Kids com Confeitos</h3>
+        <p class="muted">Coloridos e divertidos</p>
+      </header>
+      <div class="modal-content">
+        <aside class="modal-side">
+          <div class="thumb thumb--kids"></div>
+          <ul class="meta meta--block">
+            <li>Tempo: 15 min</li>
+            <li>Rendimento: 20 minis</li>
+          </ul>
+        </aside>
+        <article class="modal-main">
+          <h4>Ingredientes</h4>
+          <ul>
+            <li>20 mini morangos</li>
+            <li>250 g chocolate ao leite</li>
+            <li>Confeitos coloridos</li>
+          </ul>
+          <h4>Preparo</h4>
+          <ol>
+            <li>Banhe, escorra e mergulhe nos confeitos.</li>
+            <li>Leve para firmar por 10 min.</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
